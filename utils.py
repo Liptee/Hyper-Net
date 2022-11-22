@@ -30,5 +30,5 @@ def create_binary_masks(file:str, idx:str, name="binary"):
     num_labels = len(np.unique(mask))
 
     with ThreadPoolExecutor(max_workers=num_labels) as executor:
-        for label in range(1, num_labels + 1):
+        for label in range(1, num_labels):
             executor.submit(thread_binaring, label, mask, file, name, idx)

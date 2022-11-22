@@ -3,10 +3,10 @@ import torch.nn as nn
 path_to_img = ""
 index_in_img_file = ""
 
-path_to_mask = "dataset/first_row_mask.mat"
+path_to_mask = "dataset/cpu_mask.mat"
 index_in_mask_file = "img"
 
-path_to_img = "dataset/first_row_img_no_blue.mat"
+path_to_img = "dataset/cpu.mat"
 index_in_img_file = "image"
 
 cuda_device = "cpu"
